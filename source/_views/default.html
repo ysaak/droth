@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if lte IE 7]> <html class="no-js ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 ie678" lang="fr"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 9]> <!--><html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+		<meta charset="UTF-8">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!--link rel="stylesheet" href="{{ site.url }}/css/knacss.css" media="all"-->
+    <link rel="stylesheet" href="{{ site.url }}/css/style.css" media="all">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <div id="main" role="main" class="row mw1140p center">
+		<div class="col aside">
+            <div id="logo" class="line pbl">
+                <span class="start pas"><img src="{{ site.url }}/img/avatar.jpg" alt="" /></span>
+                <div class="mod">
+                    <h1 id="title">Damien Roth</h1>
+                    <p>Hyperspace Engineer</p>
+                </div>
+            </div>
+
+			<nav id="navigation" role="navigation" class="mbs">
+				<ul>
+
+                    <li><a href="{{ site.url }}/" class="active"><i class="fa fa-home"></i> <span>Intro</span></a></li>
+                    <li><a href="{{ site.url }}/curriculum_vitae"><i class="fa fa-th"></i> <span>Curriculum Vitae</span></a></li>
+                    <li><a href="{{ site.url }}/projets"><i class="fa fa-user"></i> <span>Projets</span></a></li>
+                    <li class="title mts">Recherche</li>
+                    <li><a href="{{ site.url }}/these"><i class="fa fa-rebel"></i> <span>Thèse</span></a></li>
+                    <li><a href="{{ site.url }}/publications"><i class="fa fa-space-shuttle"></i> <span>Publications</span></a></li>
+                    <li><a href="{{ site.url }}/enseignements"><i class="fa fa-empire"></i> <span>Enseignements</span></a></li>
+	    		</ul>
+
+                <!-- Social Icons -->
+                <ul class="social autogrid4">
+                    <li><a href="#" class=""><i class="fa fa-twitter"></i><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class=""><i class="fa fa-github"></i><span class="label">Github</span></a></li>
+                    <li><a href="#" class=""><i class="fa fa-linkedin"></i><span class="label">Linked-in</span></a></li>
+                    <li><a href="#" class=""><i class="fa fa-envelope"></i><span class="label">Email</span></a></li>
+                </ul>
+    		</nav>
+		</div>
+
+  <div class="col pam content">
+      {% if page.homepage is defined %}
+            <header id="page-header">
+                <div class="pas inner-header">
+                    <h1>Damien ROTH</h1>
+                    <h2>Chef de projet MOE chez Euro Protection Surveillance</h2>
+                </div>
+            </header>
+      {% else %}
+        <div id="page-header-small"></div>
+      {% endif %}
+
+      <div>
+        {% block content %}{% endblock %}
+      </div>
+      </div>
+  </div>
+	<footer id="footer" role="contentinfo" class="line pam txtcenter">
+		Copyright © 2009-2015 - Damien ROTH
+	</footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300);
+
+//@import '_config';
+//@import '_mixins';
+
+@import '../vendor/knacss/less/knacss';
+
+body {
+    background-color: #EFF0F4;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#page-header, #page-header-small {
+    background: rgb(47, 111, 155) url('../img/header.png') top right;
+    height: 150px;
+    margin: -20px -20px 0 -20px;
+    position: relative
+}
+#page-header-small {
+  height: 15px;
+}
+
+#page-header>div {
+    position: absolute; 
+    bottom: 0; 
+    right: 0
+}
+
+#page-header h1, #page-header h2 {
+    color: white;
+    text-align: right;
+    margin: 0;
+}
+
+#header {
+    background-color: #233F79;
+    border-bottom: 8px solid /*#303E73*/ #233F79;
+    color: #FFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.23), 0px 3px 10px rgba(0, 0, 0, 0.16);
+    z-index: 50;
+}
+#header img {
+    margin-top: 4px;
+}
+
+#header h1 {
+    position: relative;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+}
+
+#header h1 small {
+    display: block;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
+
+#logo {
+    position: relative;
+    margin: 1.75em 1.5em 1.5em;
+    min-height: 48px;
+    cursor: default;
+}
+
+#logo h1 {
+    position: relative;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+}
+
+#logo p {
+    position: relative;
+    display: block;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.25em;
+    margin: 0;
+}
+
+
+#main {
+    /*box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12), 0px 1px 6px rgba(0, 0, 0, 0.12);*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.23), 0px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+.aside {
+    color: #FFF;
+    background-color: #222629;
+    position: relative;
+    width: 300px;
+}
+
+.content {
+    background-color: #FFF;
+}
+
+
+/*-------------*/
+@import 'navigation';
+@import 'cv';
+@import 'publication';

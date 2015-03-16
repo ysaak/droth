@@ -1,0 +1,6 @@
+node_modules
+output_dev
+output_prod
+assets/vendor
+.sculpin
+.DS_Store

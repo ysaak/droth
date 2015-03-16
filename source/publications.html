@@ -1,0 +1,30 @@
+---
+layout: default
+title: Publications
+
+use: [publications]
+---
+
+<h1>Publications</h1>
+
+<div class="publications">
+{% set type = '' %}
+{% for publication in data.publications %}
+    
+{% if type != publication.type %}
+{% set type = publication.type %}
+    <h2>{{ type }}</h2>
+{% endif %}
+
+    <article>
+        <h2>{{ publication.title }}</h2>
+        <div>{{ publication.authors }}<br>
+            {{ publication.localisation }}</div>
+
+        <div class="abstract">
+            <p><strong>R&eacute;sumé&nbsp;:</strong></p>
+            <p>{{ publication.abstract }}</p>
+        </div>
+    </article>
+{% endfor %}
+</div>
