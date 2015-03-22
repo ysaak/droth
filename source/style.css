@@ -1717,10 +1717,10 @@ body {
 #navigation ul a:hover i {
   color: #FFF;
 }
-#navigation ul a.active i {
+#navigation ul li.active i {
   color: #478eba /*#E27689*/;
 }
-#navigation ul a.active {
+#navigation ul li.active a {
   background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 0.25em 0px rgba(0, 0, 0, 0.125) inset;
   color: #FFF;

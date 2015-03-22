@@ -34,13 +34,13 @@
       <nav id="navigation" role="navigation" class="mbs">
         <ul>
 
-                    <li><a href="{{ site.url }}/" class="active"><i class="fa fa-home"></i> <span>Intro</span></a></li>
-                    <li><a href="{{ site.url }}/curriculum_vitae"><i class="fa fa-th"></i> <span>Curriculum Vitae</span></a></li>
-                    <li><a href="{{ site.url }}/projets"><i class="fa fa-user"></i> <span>Projets</span></a></li>
+                    <li {% if page.nav_name == "home" %} class="active"{% endif %}><a href="{{ site.url }}/"><i class="fa fa-home"></i> <span>Intro</span></a></li>
+                    <li {% if page.nav_name == "cv" %} class="active"{% endif %}><a href="{{ site.url }}/curriculum_vitae"><i class="fa fa-th"></i> <span>Curriculum Vitae</span></a></li>
+                    <li {% if page.nav_name == "projets" %} class="active"{% endif %}><a href="{{ site.url }}/projets"><i class="fa fa-user"></i> <span>Projets</span></a></li>
                     <li class="title mts">Recherche</li>
-                    <li><a href="{{ site.url }}/these"><i class="fa fa-rebel"></i> <span>Thèse</span></a></li>
-                    <li><a href="{{ site.url }}/publications"><i class="fa fa-space-shuttle"></i> <span>Publications</span></a></li>
-                    <li><a href="{{ site.url }}/enseignements"><i class="fa fa-empire"></i> <span>Enseignements</span></a></li>
+                    <li{% if page.nav_name == "these" %} class="active"{% endif %}><a href="{{ site.url }}/these"><i class="fa fa-rebel"></i> <span>Thèse</span></a></li>
+                    <li{% if page.nav_name == "publications" %} class="active"{% endif %}><a href="{{ site.url }}/publications"><i class="fa fa-space-shuttle"></i> <span>Publications</span></a></li>
+                    <li{% if page.nav_name == "enseignements" %} class="active"{% endif %}><a href="{{ site.url }}/enseignements"><i class="fa fa-empire"></i> <span>Enseignements</span></a></li>
           </ul>
 
                 <!-- Social Icons -->

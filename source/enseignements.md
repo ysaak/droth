@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Publications
+nav_name: enseignements
 ---
 
 ## Récapitulatif des enseignements
@@ -147,4 +148,3 @@ title: Publications
 </table>
 
 <p>N.B : Les volumes horaires sont not&eacute;s en équivalents TD.</p>
-
