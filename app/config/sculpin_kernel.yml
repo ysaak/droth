@@ -4,3 +4,5 @@ sculpin_content_types:
 #        permalink: blog/:year/:month/:day/:filename/
 
     publications:
+      layout: publication
+      permalink: publication/:slug_title.html

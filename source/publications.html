@@ -14,18 +14,14 @@ use: [publications]
 
 {% if type != publication.type %}
 {% set type = publication.type %}
-    <h2>{{ type }}</h2>
+    <h2 class="mbn">{{ type }}</h2>
 {% endif %}
 
     <article>
-        <h2>{{ publication.title }}</h2>
-        <div>{{ publication.authors }}<br>
-            {{ publication.localisation }}</div>
+      <p><strong><a href="{{ site.url }}{{ publication.url }}">{{ publication.title }}</a></strong></p>
 
-        <div class="abstract">
-            <p><strong>R&eacute;sumé&nbsp;:</strong></p>
-            <p>{{ publication.abstract }}</p>
-        </div>
+      <div>{{ publication.authors }}<br>
+      {{ publication.localisation }}</div>
     </article>
 {% endfor %}
 </div>
